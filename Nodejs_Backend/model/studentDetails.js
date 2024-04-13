@@ -6,10 +6,10 @@ const studentDetails = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    email: {
+    email: { 
         type: String,
-        required: true,
-    },
+         required: true,
+          unique: true },
     password: {
         type: String,
         required: true,

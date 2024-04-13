@@ -1,0 +1,134 @@
+
+const faqSchema = new mongoose.Schema({
+    id: Number,
+    question: String,
+    answer: String
+});
+
+const FAQ = mongoose.model('FAQ', faqSchema);
+
+const faqData = [
+    {
+        "id": 1,
+        "question": "Are you tied up with the top colleges",
+        "answer": "Yes WayTogo has a years of execellence and having been achieving a lot since started by taking students to their dream college at dream country."
+    },
+    {
+        "id": 2,
+        "question": "What are the best consultancies for studying abroad?",
+        "answer": "There are several reputable consultancies like ABC Consultants, XYZ Overseas, etc. Make sure to research and choose one that fits your needs."
+    },
+    {
+        "id": 3,
+        "question": "Which exams are required for studying abroad?",
+        "answer": "Common exams include IELTS, TOEFL, GRE, GMAT, etc. The specific exams depend on the country and the course you are applying for."
+    },
+    {
+        "id": 4,
+        "question": "How can I prepare for language proficiency exams?",
+        "answer": "You can join language classes, use online resources, and practice regularly to improve your language skills for exams like IELTS and TOEFL."
+    }
+];
+const insertData = async () => {
+    try {
+        await FAQ.insertMany(faqData);
+        console.log('FAQ data inserted successfully.');
+    } catch (error) {
+        console.error('Error inserting FAQ data:', error);
+    }
+};
+
+
+insertData();
+
+
+const programSch =new mongoose.Schema({
+    
+       id : Number,
+       program: String,
+       location : String,
+       when : String,
+       timing: String
+    });
+ const Program = mongoose.model('Program',programSch);
+    
+const proData =[
+        {
+            "id":"1",
+          "program": "Ontario Provincial Nominee Program",
+          "location": "Chennai",
+          "when": "April 15, 2023",
+          "timing": "10:00 AM - 4:00 PM"
+        },
+        {
+            "id":"2",
+          "program": "Alberta Advantage Immigration Program",
+          "location": "Coimbatore, Kodesia",
+          "when": "June 10, 2023",
+          "timing": "11:00 AM - 5:00 PM"
+        },
+        {
+            "id":"3",
+          "program": "Express Entry via Provincial Nominee Program",
+          "location": "Karnataka, Mg Colony",
+          "when": "May 20, 2023",
+          "timing": "9:00 AM - 3:00 PM"
+        },
+        {
+            "id":"4",
+          "program": "University Application Assistance",
+          "location": "Delhi, Trinity hall",
+          "when": "Aug 24, 2024",
+          "timing": "12:00 AM - 3:00 PM"
+        }
+        
+      ]
+
+      const inserData =async()=>{
+          try{
+           await  Program.insertMany(proData);
+           console.log("data inserted");
+          }catch(error){
+            console.log("Error ..");
+          }
+      }
+inserData();
+
+
+// const canadaTerritorySchema = new mongoose.Schema({
+//     province: String,
+//     category: String,
+//     expressEntryAligned: String,
+//     jobOfferRequired: String
+//   });
+  
+ 
+//   const CanadaTerritory = mongoose.model('CanadaTerritory', canadaTerritorySchema);
+  
+//   const canadaTerritoriesData = [
+//     { province: 'Alberta', category: 'Accelerated Tech Pathway', expressEntryAligned: 'Yes', jobOfferRequired: 'Yes' },
+//     { province: 'Alberta', category: 'Alberta Opportunity Stream', expressEntryAligned: 'No', jobOfferRequired: 'Yes' },
+//     { province: 'Alberta', category: 'Express Entry Stream', expressEntryAligned: 'Yes', jobOfferRequired: 'No' },
+  
+//  CanadaTerritory.insertMany(canadaTerritoriesData)
+//   .then(() => {
+//     console.log('Data inserted successfully');
+//   })
+//   .catch((error) => {
+//     console.error('Error inserting data:', error);
+//   });
+
+
+Things to be done
+-> home chat 
+-> contact chat bot
+-> PNP-finder apply button
+-> home college list
+-> resources program applciaction
+-> contact page enhancement
+-> Responsiveness
+-> footer working
+-> our team updation
+-> Log out
+-> form validation
+-> blog image 
