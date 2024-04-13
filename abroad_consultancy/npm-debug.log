@@ -1,0 +1,31 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json S:\subjects\MERN\Placement_Training\React\abroad_consultancy\package.json
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart abroad_consultancy@0.1.0
+7 info start abroad_consultancy@0.1.0
+8 verbose unsafe-perm in lifecycle true
+9 silly exec cmd "/c" "react-scripts start"
+10 silly cmd,/c,react-scripts start,S:\subjects\MERN\Placement_Training\React\abroad_consultancy spawning
+11 info abroad_consultancy@0.1.0 Failed to exec start script
+12 error abroad_consultancy@0.1.0 start: `react-scripts start`
+12 error `cmd "/c" "react-scripts start"` failed with 8
+13 error Failed at the abroad_consultancy@0.1.0 start script.
+13 error This is most likely a problem with the abroad_consultancy package,
+13 error not with npm itself.
+13 error Tell the author that this fails on your system:
+13 error     react-scripts start
+13 error You can get their info via:
+13 error     npm owner ls abroad_consultancy
+13 error There is likely additional logging output above.
+14 error System Windows_NT 6.2.9200
+15 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error cwd S:\subjects\MERN\Placement_Training\React\abroad_consultancy
+17 error node -v v0.10.0
+18 error npm -v 1.2.14
+19 error code ELIFECYCLE
+20 verbose exit [ 1, true ]
